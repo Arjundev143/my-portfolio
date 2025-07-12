@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Dhanunjai Reddy Kristipati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: #0072ff;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .project-tags {
+      font-size: 0.85rem;
+      margin: 10px 0;
+    }
+
+    .project-links a {
+      margin-right: 12px;
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dhanunjai's Projects</h1>
+  <a href="index.html">← Back to Portfolio</a>
+</header>
+
+<div class="container">
+  <h2>🚀 My Technical Projects</h2>
+  <div class="projects-grid">
+
+    <!-- 1. Bittu AI -->
+    <div class="project-card">
+      <img src="images/bittu-ai.png" alt="Bittu AI">
+      <div class="project-content">
+        <h3>Bittu AI Assistant </h3>
+        <p>A powerful personal assistant with voice interaction, floating GUI, wake-word, Gemini AI, music control, desktop automation, and emotion-based replies.</p>
+        <p class="project-tags"><strong>Tech:</strong> Python, PyQt5, Gemini API, TTS/STT</p>
+        <div class="project-links">
+          <a href="#">GET THE PROJECT</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. THD Analyzer -->
+    <div class="project-card">
+      <img src="images/TDH.jpg" alt="THD Analyzer">
+      <div class="project-content">
+        <h3>Real-Time THD Analyzer</h3>
+        <p>Python GUI that visualizes harmonic distortion in electrical signals with real-time FFT, dB scaling, CSV export, and live plotting.</p>
+        <p class="project-tags"><strong>Tech:</strong> Python, Matplotlib, NumPy, Tkinter</p>
+        <div class="project-links">
+          <a href="#">GET THE PROJECT</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Digital Modulation Simulator -->
+    <div class="project-card">
+      <img src="images/Digital Modulation Simulator.jpg" alt="Digital Modulation">
+      <div class="project-content">
+        <h3>Digital Modulation Simulator</h3>
+        <p>Simulates ASK, FSK, PSK with noise, spectrum plots, and BER vs SNR graphs. Includes GUI, export to PDF/CSV, and real-time signal analysis.</p>
+        <p class="project-tags"><strong>Tech:</strong> Python, NumPy, Matplotlib, GUI</p>
+        <div class="project-links">
+          <a href="#">GET THE PROJECT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Smart IoT SOS Locket -->
+    <div class="project-card">
+      <img src="images/download.png" alt="SOS Locket">
+      <div class="project-content">
+        <h3>Smart IoT SOS Locket</h3>
+        <p>Wearable safety device using ESP32, GPS, GSM (SIM800L) that sends SOS alerts with location via SMS. PCB and casing fit into 2-inch wearable design.</p>
+        <p class="project-tags"><strong>Tech:</strong> ESP32, SIM800L, Embedded C, GPS</p>
+        <div class="project-links">
+          <a href="#">GET THE PROJECT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Smart Inverter with MPPT -->
+    
+
+    <!-- 6. Phishing Website Detection -->
+    <div class="project-card">
+      <img src="images/download.jpg" alt="Phishing Detection">
+      <div class="project-content">
+        <h3>Phishing Website Detector</h3>
+        <p>Python and ML-based system that detects malicious websites based on URL patterns, content, and behavior using trained classifiers.</p>
+        <p class="project-tags"><strong>Tech:</strong> Python, ML, Scikit-learn, Pandas</p>
+        <div class="project-links">
+          <a href="#">GET THE PROJECT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Robotic Humanoid -->
+    <div class="project-card">
+      <img src="images/robot.jpg" alt="Humanoid Robot">
+      <div class="project-content">
+        <h3>Robotic Humanoid</h3>
+        <p>Bluetooth-controlled humanoid robot capable of basic movements and gesture-based interactions. Built using Arduino and sensors.</p>
+        <p class="project-tags"><strong>Tech:</strong> Arduino, Servo Motors, HC-05</p>
+        <div class="project-links">
+            to buy this
+          <a href="mail to:bunykristipatidhanu123@gmail.com">SOLD OUT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Library Automation System -->
+    
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 Dhanunjai Reddy Kristipati. All rights reserved.
+</footer>
+
+</body>
+</html>
